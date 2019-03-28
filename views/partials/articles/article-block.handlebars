@@ -2,8 +2,8 @@
   <div class="card-header">
     <h3>
       <a class="article-link" target="_blank" rel="noopener noreferrer" href="{{link}}">{{title}}</a>
-      <a class="btn btn-success {{#if saved}}delete{{else}}save{{/if}}">{{#if saved}}DELETE FROM SAVED{{else}}SAVE ARTICLE{{/if}}</a>
-      {{#if saved}}<a class="btn btn-success notes">ARTICLE NOTES</a>{{/if}}
+      {{#if saved}}<a style='float: right;' class="btn btn-success notes" data-toggle="modal" data-target="#myModal">ARTICLE NOTES</a>{{/if}}
+      <a style='float: right;' class="btn btn-success {{#if saved}}delete{{else}}save{{/if}}">{{#if saved}}DELETE FROM SAVED{{else}}SAVE ARTICLE{{/if}}</a>
     </h3>
   </div>
   <div class="card-body">{{summary}}</div>

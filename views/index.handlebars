@@ -38,3 +38,29 @@
     {{> articles/article-block}}
   {{/each}}
 </div>
+
+<div id="myModal" class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="noteModalTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="previous-note">
+          <h3>Previous note:</h3>
+          <h4 id="previous-title"></h4>
+          <p id="previous-body"></p>
+        </div>
+        <input style='width: 100%;' type="text" name="note-title" id="modal-note-title" placeholder="Enter note title here..."></br>
+        <input style='width: 100%;' type="text" name="note-title" id="modal-note-body" placeholder="Enter note text here...">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary saveNote" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
